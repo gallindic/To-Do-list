@@ -13,3 +13,14 @@
  */
  
  @import "bootstrap";
+ @import "font-awesome";
+ 
+ 
+ .margin-left-md{
+     margin-left: 2em;
+ }
+ 
+ .search-bar-btn{
+     border-top-left-radius: 0;
+     border-bottom-left-radius: 0;
+ }
