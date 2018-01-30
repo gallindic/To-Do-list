@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'sprockets-rails', :require => 'sprockets/railtie'  #Sprockets-rails
 gem 'bootstrap', '~> 4.0.0' #Bootstrap css framework
 gem "font-awesome-rails"  #Font-Awesome icons
+gem 'devise'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
