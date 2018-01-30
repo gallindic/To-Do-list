@@ -1,12 +1,32 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
    <ul class="navbar-nav mr-auto">
        <li class="nav-item">
-           <!--Seznam To-Do listov-->
-           <button class="btn btn-info" type="button"><i class="fa fa-bars" aria-hidden="true"></i></button>
+           <!--Seznam To-Do listov dropdown-->
+           <div class="dropdown">
+          <button class="btn btn-info dropdown-toggle remove-dropdown-arrow" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <form class="mx-2">
+                <input type="text" class="form-control form-control-sm" placeholder="Find To-Do lists">
+            </form>
+            <div class="dropdown-divider"></div>
+            <h6 class="dropdown-header text-center">Personal lists</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">List 1</a>
+            <a class="dropdown-item" href="#">List 1</a>
+            <a class="dropdown-item" href="#">List 1</a>
+            <div class="dropdown-divider"></div>
+            <h6 class="dropdown-header text-center">Team lists</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">List 1</a>
+            <a class="dropdown-item" href="#">List 1</a>
+            <a class="dropdown-item" href="#">List 1</a>
+            <div class="dropdown-divider"></div>
+          </div>
+        </div>
        </li>
        <li class="nav-item">
            <!--Search bar-->
-           <form class="navbar-form px-4" role="search">
+           <form class="navbar-form px-2" role="search">
             <div class="input-group add-on">
               <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
               <div class="input-group-btn">
@@ -18,16 +38,35 @@
    </ul>
   <ul class="navbar-nav">
       <li class="nav-item px-1">
-        <!--Ustvari nov To-Do list-->
-        <button class="btn btn-info" type="button"><i class="fa fa-plus" aria-hidden="true"></i></button>  
+          <!--Domov-->
+        <a href="/home"><button class="btn btn-info" type="button"><i class="fa fa-home" aria-hidden="true"></i></button></a> 
       </li>
       <li class="nav-item px-1">
-          <!--Obvestila-->
-        <button class="btn btn-info" type="button"><i class="fa fa-bell" aria-hidden="true"></i></button>  
+        <!--Ustvari nov To-Do list dropdown-->
+        <div class="dropdown">
+          <button class="btn btn-info dropdown-toggle remove-dropdown-arrow" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-plus" aria-hidden="true"></i></button>
+          <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+            <h6 class="dropdown-header text-center">Create</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/createBoard">Create a To-Do list</a>
+            <a class="dropdown-item" href="/createTeam">Create a Team</a>
+        </div>
+      </li>
+      <li class="nav-item px-1">
+          <!--Obvestila dropdown-->
+        <div class="dropdown">
+          <button class="btn btn-info dropdown-toggle remove-dropdown-arrow" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell" aria-hidden="true"></i></button>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+            <h6 class="dropdown-header text-center">Notifications</h6>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">See all notifications</a>
+          </div>
+        </div>
       </li>
       <li class="nav-item px-1">
           <!--Profil-->
-        <button class="btn btn-info" type="button"><i class="fa fa-user-circle" aria-hidden="true"></i></button>  
+        <a href="/profile"><button class="btn btn-info" type="button"><i class="fa fa-user-circle" aria-hidden="true"></i></button></a>  
       </li>
   </ul>
 </nav>
+
