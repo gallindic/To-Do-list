@@ -26098,3 +26098,580 @@ Migrating to CreateTypes (20180206085727)
   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "types" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Personal"], ["description", "Lists you can use for personal use"], ["created_at", "2018-02-06 09:01:49.719595"], ["updated_at", "2018-02-06 09:01:49.719595"]]
   [1m[35m (9.4ms)[0m  commit transaction
   [1m[36mType Load (0.3ms)[0m  [1mSELECT "types".* FROM "types"[0m
+
+
+Started GET "/profile/Paradajz" for 194.249.251.234 at 2018-02-06 09:03:15 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by PagesController#profile as HTML
+  Parameters: {"id"=>"Paradajz"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "Paradajz"]]
+  Rendered pages/profile.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 89ms (Views: 67.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/bootstrap/modal.self-b16cc407b110cb558be40dda7291e1bcb6763a187a086035e5d946002beb39c1.js?body=1" for 194.249.251.234 at 2018-02-06 09:03:15 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-36bf9bbd1055d761ab6feb5e4b73e2e3df14503cc0596881c93e62ef3d985a2e.css?body=1" for 194.249.251.234 at 2018-02-06 09:03:15 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/popper.self-b5d0395dd499f58f910fee32e5221f71c3b8e6f3229879a7b76d481c5446de10.js?body=1" for 194.249.251.234 at 2018-02-06 09:03:15 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-7c4552a145e8b8969660afabae4c0405755cd1e2ec74fce3a48d413094ac2f98.js?body=1" for 194.249.251.234 at 2018-02-06 09:03:15 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/util.self-e642b82a9b9558c2a8dfb34433f8c486df727b1093f3a3f7ad6ef5d51f87fea1.js?body=1" for 194.249.251.234 at 2018-02-06 09:03:15 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-dee184bdf9a9c56c18340eceb4985c847124e53f608b3f96c85abf59a59d4e6f.js?body=1" for 194.249.251.234 at 2018-02-06 09:03:15 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery3.self-06c43429d1047ce3f355da574d8a9750209971b8b1b8f264f91f5518c5fcc060.js?body=1" for 194.249.251.234 at 2018-02-06 09:03:16 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-782b855e353ac984f70e8234e5c9ef99bde0be23c02785b01bc2aa6e19363341.js?body=1" for 194.249.251.234 at 2018-02-06 09:03:16 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5e6559c5957d65ff19c4fbfe2cedf307b6ae736c9d7ee7ba4a9c99b46771697d.js?body=1" for 194.249.251.234 at 2018-02-06 09:03:16 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-06243ed087bf45ef738745a758369fbe4ed9fbba77554d46ac49a4302101a7c0.js?body=1" for 194.249.251.234 at 2018-02-06 09:03:16 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-02a9b4ab5704ba8a11fe6e40e9086cee3d5914c2909a8a3e0e3f6e4d4954b8c9.js?body=1" for 194.249.251.234 at 2018-02-06 09:03:16 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-ff708db7950f1b1f1db2087879e35e0016aab9d91be27f314e5084c6639dec90.js?body=1" for 194.249.251.234 at 2018-02-06 09:03:16 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js?body=1" for 194.249.251.234 at 2018-02-06 09:03:16 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-4a2e9739820f6ad0f323e4408d205582892173ce5bd77755222af4f0d23361b4.js?body=1" for 194.249.251.234 at 2018-02-06 09:03:16 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 194.249.251.234 at 2018-02-06 09:03:16 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 194.249.251.234 at 2018-02-06 09:03:16 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1" for 194.249.251.234 at 2018-02-06 09:03:16 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-0ae04cb661eb201a1f9fa5dacfb406f0e8f6c54d6ced0897d7c638b38b5f3cad.js?body=1" for 194.249.251.234 at 2018-02-06 09:03:16 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 194.249.251.234 at 2018-02-06 09:03:16 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started DELETE "/users/sign_out" for 194.249.251.234 at 2018-02-06 09:03:19 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VmF9YkSxvo2hE/ZfxB//XIme7N8ndVjrLg2dStYooKkhlE649mWPszSosCT6Dr7yl/fE+Z6lrgmJlr5ASir9UQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://to-do-list-gallindic.c9users.io/
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 194.249.251.234 at 2018-02-06 09:03:19 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 194.249.251.234 at 2018-02-06 09:03:20 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 72ms (Views: 69.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 194.249.251.234 at 2018-02-06 09:03:21 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 67ms (Views: 65.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 194.249.251.234 at 2018-02-06 09:03:23 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 194.249.251.234 at 2018-02-06 09:03:24 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.6ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 73ms (Views: 72.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 194.249.251.234 at 2018-02-06 09:03:26 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 194.249.251.234 at 2018-02-06 09:03:27 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XE1HuY3kzUXgnKkxr5fepPEhXhucQcYBVPRyo9Q8iW8yiSnW1BO17TetFJzi2u2vZFKRES20VFh+BWvloz5/AQ==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "test@test.com"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2018-02-06 08:20:27.796018"], ["current_sign_in_at", "2018-02-06 09:03:27.819343"], ["sign_in_count", 17], ["updated_at", "2018-02-06 09:03:27.820965"], ["id", 7]]
+  [1m[36m (8.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://to-do-list-gallindic.c9users.io/
+Completed 302 Found in 165ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/" for 194.249.251.234 at 2018-02-06 09:03:27 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile/Paradajz" for 194.249.251.234 at 2018-02-06 09:03:30 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#profile as HTML
+  Parameters: {"id"=>"Paradajz"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "Paradajz"]]
+  Rendered pages/profile.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 48.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home" for 194.249.251.234 at 2018-02-06 09:03:33 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 50.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for 194.249.251.234 at 2018-02-06 09:04:36 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+Completed 200 OK in 60ms (Views: 58.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery3.self-06c43429d1047ce3f355da574d8a9750209971b8b1b8f264f91f5518c5fcc060.js?body=1" for 194.249.251.234 at 2018-02-06 09:04:36 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/popper.self-b5d0395dd499f58f910fee32e5221f71c3b8e6f3229879a7b76d481c5446de10.js?body=1" for 194.249.251.234 at 2018-02-06 09:04:36 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/util.self-e642b82a9b9558c2a8dfb34433f8c486df727b1093f3a3f7ad6ef5d51f87fea1.js?body=1" for 194.249.251.234 at 2018-02-06 09:04:36 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-7c4552a145e8b8969660afabae4c0405755cd1e2ec74fce3a48d413094ac2f98.js?body=1" for 194.249.251.234 at 2018-02-06 09:04:36 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-0ae04cb661eb201a1f9fa5dacfb406f0e8f6c54d6ced0897d7c638b38b5f3cad.js?body=1" for 194.249.251.234 at 2018-02-06 09:04:36 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-dee184bdf9a9c56c18340eceb4985c847124e53f608b3f96c85abf59a59d4e6f.js?body=1" for 194.249.251.234 at 2018-02-06 09:04:36 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5e6559c5957d65ff19c4fbfe2cedf307b6ae736c9d7ee7ba4a9c99b46771697d.js?body=1" for 194.249.251.234 at 2018-02-06 09:04:36 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-02a9b4ab5704ba8a11fe6e40e9086cee3d5914c2909a8a3e0e3f6e4d4954b8c9.js?body=1" for 194.249.251.234 at 2018-02-06 09:04:36 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-06243ed087bf45ef738745a758369fbe4ed9fbba77554d46ac49a4302101a7c0.js?body=1" for 194.249.251.234 at 2018-02-06 09:04:36 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-4a2e9739820f6ad0f323e4408d205582892173ce5bd77755222af4f0d23361b4.js?body=1" for 194.249.251.234 at 2018-02-06 09:04:36 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-ff708db7950f1b1f1db2087879e35e0016aab9d91be27f314e5084c6639dec90.js?body=1" for 194.249.251.234 at 2018-02-06 09:04:36 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js?body=1" for 194.249.251.234 at 2018-02-06 09:04:36 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 194.249.251.234 at 2018-02-06 09:04:36 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1" for 194.249.251.234 at 2018-02-06 09:04:36 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 194.249.251.234 at 2018-02-06 09:04:36 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 194.249.251.234 at 2018-02-06 09:04:36 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-36bf9bbd1055d761ab6feb5e4b73e2e3df14503cc0596881c93e62ef3d985a2e.css?body=1" for 194.249.251.234 at 2018-02-06 09:04:36 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-b16cc407b110cb558be40dda7291e1bcb6763a187a086035e5d946002beb39c1.js?body=1" for 194.249.251.234 at 2018-02-06 09:04:37 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-782b855e353ac984f70e8234e5c9ef99bde0be23c02785b01bc2aa6e19363341.js?body=1" for 194.249.251.234 at 2018-02-06 09:04:37 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/profile/Paradajz" for 194.249.251.234 at 2018-02-06 09:04:48 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#profile as HTML
+  Parameters: {"id"=>"Paradajz"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "Paradajz"]]
+  Rendered pages/profile.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+Completed 200 OK in 53ms (Views: 51.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home" for 194.249.251.234 at 2018-02-06 09:04:51 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 55.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile/Paradajz" for 194.249.251.234 at 2018-02-06 09:05:40 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#profile as HTML
+  Parameters: {"id"=>"Paradajz"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "Paradajz"]]
+  Rendered pages/profile.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 60ms (Views: 58.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home" for 194.249.251.234 at 2018-02-06 09:05:43 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 52.5ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateLists (20180206090846)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "finished" boolean, "user_id" integer, "type_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_lists_on_user_id" ON "lists" ("user_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_lists_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_lists_on_user_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_lists_on_type_id" ON "lists" ("type_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_lists_on_type_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_lists_on_type_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_lists_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_lists_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_lists_on_user_id_and_created_at" ON "lists" ("user_id", "created_at")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_lists_on_user_id_and_created_at' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_lists_on_user_id_and_created_at' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_lists_on_type_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_lists_on_type_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_lists_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_lists_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_lists_on_type_id_and_created_at" ON "lists" ("type_id", "created_at")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180206090846"]]
+  [1m[35m (9.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_lists_on_type_id_and_created_at' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_lists_on_type_id_and_created_at' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_lists_on_user_id_and_created_at' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_lists_on_user_id_and_created_at' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_lists_on_type_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_lists_on_type_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_lists_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_lists_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_username' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_username' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "lists" ("name", "finished", "user_id", "type_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "New list"], ["finished", "f"], ["user_id", 7], ["type_id", 1], ["created_at", "2018-02-06 09:20:44.998995"], ["updated_at", "2018-02-06 09:20:44.998995"]]
+  [1m[35m (9.6ms)[0m  commit transaction
+  [1m[36mList Load (0.3ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  [1m[35mType Load (0.3ms)[0m  SELECT "types".* FROM "types"
+
+
+Started GET "/home" for 194.249.251.234 at 2018-02-06 09:22:37 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.4ms)
+Completed 200 OK in 81ms (Views: 66.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/bootstrap/modal.self-b16cc407b110cb558be40dda7291e1bcb6763a187a086035e5d946002beb39c1.js?body=1" for 194.249.251.234 at 2018-02-06 09:22:37 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-36bf9bbd1055d761ab6feb5e4b73e2e3df14503cc0596881c93e62ef3d985a2e.css?body=1" for 194.249.251.234 at 2018-02-06 09:22:37 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery3.self-06c43429d1047ce3f355da574d8a9750209971b8b1b8f264f91f5518c5fcc060.js?body=1" for 194.249.251.234 at 2018-02-06 09:22:37 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/util.self-e642b82a9b9558c2a8dfb34433f8c486df727b1093f3a3f7ad6ef5d51f87fea1.js?body=1" for 194.249.251.234 at 2018-02-06 09:22:37 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/popper.self-b5d0395dd499f58f910fee32e5221f71c3b8e6f3229879a7b76d481c5446de10.js?body=1" for 194.249.251.234 at 2018-02-06 09:22:37 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-7c4552a145e8b8969660afabae4c0405755cd1e2ec74fce3a48d413094ac2f98.js?body=1" for 194.249.251.234 at 2018-02-06 09:22:37 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-782b855e353ac984f70e8234e5c9ef99bde0be23c02785b01bc2aa6e19363341.js?body=1" for 194.249.251.234 at 2018-02-06 09:22:37 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/dropdown.self-06243ed087bf45ef738745a758369fbe4ed9fbba77554d46ac49a4302101a7c0.js?body=1" for 194.249.251.234 at 2018-02-06 09:22:37 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-02a9b4ab5704ba8a11fe6e40e9086cee3d5914c2909a8a3e0e3f6e4d4954b8c9.js?body=1" for 194.249.251.234 at 2018-02-06 09:22:37 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-4a2e9739820f6ad0f323e4408d205582892173ce5bd77755222af4f0d23361b4.js?body=1" for 194.249.251.234 at 2018-02-06 09:22:37 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-ff708db7950f1b1f1db2087879e35e0016aab9d91be27f314e5084c6639dec90.js?body=1" for 194.249.251.234 at 2018-02-06 09:22:37 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-636159b35205da4142a43bc02d2849d77d3ac07a0946211585cde15a9c6ff21f.js?body=1" for 194.249.251.234 at 2018-02-06 09:22:37 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 194.249.251.234 at 2018-02-06 09:22:38 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 194.249.251.234 at 2018-02-06 09:22:38 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-0ae04cb661eb201a1f9fa5dacfb406f0e8f6c54d6ced0897d7c638b38b5f3cad.js?body=1" for 194.249.251.234 at 2018-02-06 09:22:38 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-dee184bdf9a9c56c18340eceb4985c847124e53f608b3f96c85abf59a59d4e6f.js?body=1" for 194.249.251.234 at 2018-02-06 09:22:38 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5e6559c5957d65ff19c4fbfe2cedf307b6ae736c9d7ee7ba4a9c99b46771697d.js?body=1" for 194.249.251.234 at 2018-02-06 09:22:38 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1" for 194.249.251.234 at 2018-02-06 09:22:38 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 194.249.251.234 at 2018-02-06 09:22:38 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started DELETE "/users/sign_out" for 194.249.251.234 at 2018-02-06 09:22:40 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qIf1SiETpPBkZ4cIVMuPgVbREGWHEQbtsN5Lj1BAWP/Z0XfzYkycI00ijkP22g8o/+yc31ETsmDbizsJuSJY/w=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://to-do-list-gallindic.c9users.io/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 194.249.251.234 at 2018-02-06 09:22:40 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 194.249.251.234 at 2018-02-06 09:22:40 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 65ms (Views: 63.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 194.249.251.234 at 2018-02-06 09:22:41 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n/CW0sc4OFziIvyImTWpoP1FlVJiiiOJIr7mdqMj74WoCJRLztvcaHI4W0Zt1OKMchXYscUKxb+03nFGWJdeZQ==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "test@test.com"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2018-02-06 09:03:27.819343"], ["current_sign_in_at", "2018-02-06 09:22:42.123235"], ["sign_in_count", 18], ["updated_at", "2018-02-06 09:22:42.125157"], ["id", 7]]
+  [1m[36m (9.3ms)[0m  [1mcommit transaction[0m
+Redirected to https://to-do-list-gallindic.c9users.io/
+Completed 302 Found in 170ms (ActiveRecord: 10.2ms)
+
+
+Started GET "/" for 194.249.251.234 at 2018-02-06 09:22:42 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.3ms)
+Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profile/Paradajz" for 194.249.251.234 at 2018-02-06 09:22:46 +0000
+Cannot render console from 194.249.251.234! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#profile as HTML
+  Parameters: {"id"=>"Paradajz"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "Paradajz"]]
+  Rendered pages/profile.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav.html.erb (0.2ms)
+Completed 200 OK in 54ms (Views: 51.3ms | ActiveRecord: 0.5ms)
