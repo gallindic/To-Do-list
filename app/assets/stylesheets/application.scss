@@ -24,3 +24,19 @@
  .remove-dropdown-arrow::after{
     display:none;
  }
+ 
+ .dropdown-item:hover{
+  background-color: #e6e6e6 !important;
+ }
+ 
+ .card-no-border{
+  border-radius: 0;
+ }
+ 
+ .card-dark-border{
+  border-color: #b3b3b3;
+ }
+ 
+ .tasks{
+  font-size: 1.2em;
+ }
