@@ -37,6 +37,15 @@
   border-color: #b3b3b3;
  }
  
+ .list-name{
+  color: black;
+ }
+ 
+ .list-name:hover{
+  text-decoration: none;
+  color:#007bff;
+ }
+ 
  .tasks{
   font-size: 1.2em;
  }

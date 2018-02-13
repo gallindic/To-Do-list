@@ -9,14 +9,14 @@
                         <div class="card col-12 mt-3 p-3 card-no-border card-dark-border">
                           <div class="card-block tasks">
                               <div class="float-left">
-                                  <a href=""><%= @l.name %></a>
+                                  <%= link_to @l.name, list_path(@l.id) %>
                               </div>
                               <div class="float-right">
                                   <span class="mx-1 card-icon">
                                       <a href=""><i class="fa fa-pencil"></i></a>
                                   </span>
                                   <span class="mx-1 card-icon">
-                                      <a href=""><i class="fa fa-trash-o"></i></a>
+                                      <%= link_to fa_icon("trash-o"), @list , method: :delete, data: { confirm: 'Are you sure?' } %>
                                   </span>
                               </div>
                             </div>
@@ -31,11 +31,11 @@
                         <div class="card col-12 mt-3 p-3 card-no-border card-dark-border">
                           <div class="card-block tasks">
                               <div class="float-left">
-                                  <%= @l.name %>
+                                  <%= link_to @l.name, list_path(@l.id) %>
                               </div>
                               <div class="float-right">
                                   <span class="mx-1 card-icon">
-                                      <a href=""><i class="fa fa-trash-o"></i></a>
+                                      <%= link_to fa_icon('trash-o') %> 
                                   </span>
                               </div>
                             </div>

@@ -1,17 +1,17 @@
 Rails.application.routes.draw do
-  
+
   devise_for :users
+  
+  resources :lists
+  
   #Routes
-  get '/home' => "pages#home"
+
   get '/profile/:id' => "pages#profile"
-  get '/createBoard' => "pages#createBoard"
-  get '/board' => "pages#board"
-  get '/createTeam' => "pages#createTeam"
   get '/notifications' => "pages#notifications"
   get '/settings' => "pages#settings"
   
   # You can have the root of your site routed with "root"
-  root 'pages#home'
+  root 'lists#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out wssith "rake routes".
