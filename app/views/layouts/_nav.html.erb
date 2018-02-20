@@ -39,26 +39,8 @@
         <a href="/lists"><button class="btn btn-info" type="button"><i class="fa fa-home" aria-hidden="true"></i></button></a> 
       </li>
       <li class="nav-item px-1">
-        <!--Ustvari nov To-Do list dropdown-->
-        <div class="dropdown">
-          <button class="btn btn-info dropdown-toggle remove-dropdown-arrow" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-plus" aria-hidden="true"></i></button>
-          <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-            <h6 class="dropdown-header text-center">Create</h6>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/createBoard">Create a Personal list</a>
-            <a class="dropdown-item" href="/createBoard">Create a Work list</a>
-        </div>
-      </li>
-      <li class="nav-item px-1">
-          <!--Obvestila dropdown-->
-        <div class="dropdown">
-          <button class="btn btn-info dropdown-toggle remove-dropdown-arrow" type="button"  id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell" aria-hidden="true"></i></button>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-            <h6 class="dropdown-header text-center">Notifications</h6>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="/notifications">See all notifications</a>
-          </div>
-        </div>
+        <a><%= link_to fa_icon("plus"), new_list_path, class: "btn btn-info" %></a>
+        
       </li>
       <li class="nav-item px-1">
           <!--Profile dropdown-->

@@ -11,28 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180206090846) do
+ActiveRecord::Schema.define(version: 20180220081338) do
 
   create_table "lists", force: :cascade do |t|
     t.string   "name"
     t.boolean  "finished"
     t.integer  "user_id"
-    t.integer  "type_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  add_index "lists", ["type_id", "created_at"], name: "index_lists_on_type_id_and_created_at"
-  add_index "lists", ["type_id"], name: "index_lists_on_type_id"
+  add_index "lists", ["created_at"], name: "index_lists_on_type_id_and_created_at"
   add_index "lists", ["user_id", "created_at"], name: "index_lists_on_user_id_and_created_at"
   add_index "lists", ["user_id"], name: "index_lists_on_user_id"
 
-  create_table "types", force: :cascade do |t|
-    t.string   "name"
-    t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+  create_table "tasks", force: :cascade do |t|
+    t.string   "content"
+    t.boolean  "finished"
+    t.integer  "list_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
+
+  add_index "tasks", ["list_id", "created_at"], name: "index_tasks_on_list_id_and_created_at"
+  add_index "tasks", ["list_id"], name: "index_tasks_on_list_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

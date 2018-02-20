@@ -7,7 +7,6 @@ Rails.application.routes.draw do
   #Routes
 
   get '/profile/:id' => "pages#profile"
-  get '/notifications' => "pages#notifications"
   get '/settings' => "pages#settings"
   
   # You can have the root of your site routed with "root"

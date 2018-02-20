@@ -8,9 +8,6 @@ class PagesController < ApplicationController
     end
   end
   
-  def notifications
-  end
-  
   def settings
   end
 end

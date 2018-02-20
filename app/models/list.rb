@@ -1,8 +1,8 @@
 class List < ActiveRecord::Base
   belongs_to :user
-  belongs_to :type
+  has_many :tasks
   
   validates :name, presence: true, length: { maximum: 100 }
   validates :user_id, presence: true
-  validates :type_id, presence: true
+
 end
