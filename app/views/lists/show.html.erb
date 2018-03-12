@@ -12,6 +12,11 @@
                             <% if !@t.finished %>
                                 <div class="card col-12 mt-3 p-3 card-no-border card-dark-border">
                                   <div class="card-block tasks">
+                                      <div>
+                                          <% if @t.image.present? %>
+                                            <%= image_tag @t.image_url.to_s, class: "medium-input" %>
+                                          <% end %>
+                                      </div>
                                       <div class="float-left">
                                           <span class="task-content"><%= @t.content %></span>
                                       </div>
@@ -24,6 +29,11 @@
                             <% if @t.finished %>
                                 <div class="card col-12 mt-3 p-3 card-no-border card-dark-border">
                                   <div class="card-block tasks">
+                                      <div>
+                                          <% if @t.image.present? %>
+                                            <%= image_tag @t.image_url.to_s, class: "medium-input" %>
+                                          <% end %>
+                                      </div>
                                       <div class="float-left">
                                           <span class="task-content"><%= @t.content %></span>
                                       </div>
