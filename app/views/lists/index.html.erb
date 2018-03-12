@@ -9,9 +9,12 @@
                         <div class="card col-12 mt-3 p-3 card-no-border card-dark-border">
                           <div class="card-block tasks">
                               <div class="float-left">
-                                  <%= link_to @l.name, edit_list_path(@l.id) %>
+                                  <%= link_to @l.name, task_path(@l.id) %>
                               </div>
                               <div class="float-right">
+                                  <span class="mx-1 card-icon">
+                                      <%= link_to fa_icon("check-circle"), edit_list_path(@l.id) %>
+                                  </span>
                                   <span class="mx-1 card-icon">
                                       <%= link_to fa_icon("trash-o"), @l, :data => {:confirm => 'Are you sure?'}, :method => 'delete' %>
                                   </span>

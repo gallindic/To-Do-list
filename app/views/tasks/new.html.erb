@@ -1,0 +1,19 @@
+<%= form_for @task do |t| %>
+
+  <div class="form-group">
+    <%= t.label :content %><br />
+    <%= t.text_field :content, autofocus: true, class: 'form-control' %>
+  </div>
+  
+  <div class="form-group">
+    <%= t.file_field :image, class: "form-control medium-input" %>
+  </div>
+  
+  <div class="form-group" style="display: none">
+    <%= t.text_field :list_id %>
+  </div>
+
+  <div class="form-group">
+    <%= t.submit "Create", class: 'btn btn-primary' %>
+  </div>
+<% end %>

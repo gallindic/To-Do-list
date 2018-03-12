@@ -5,6 +5,7 @@ class ListsController < ApplicationController
   
   def show
     @list = List.find(params[:id])
+    @tasks = Task.all.where("list_id = ?", @list.id)
   end
   
   def new
@@ -17,7 +18,7 @@ class ListsController < ApplicationController
     @list.user_id = current_user.id
     
     if @list.save
-      redirect_to edit_list_path(@list.id), :notice => "A new list has been successfully created"  
+      redirect_to task_path(@list.id), :notice => "A new list has been successfully created"  
     else
       render "new"
     end
@@ -26,10 +27,20 @@ class ListsController < ApplicationController
   def edit
     @list = List.find(params[:id])
     
-    @tasks = Task.all.where("list_id = ?", @list.id)
+    respond_to do |format|
+        format.html # new.html.erb
+        format.xml  { render :xml => @task }
+    end
   end
   
   def update
+    @list = List.find(params[:id])
+    @list.finished = true
+    if @list.update_attributes(params[:list].permit(:finished, :name))
+        redirect_to lists_path
+    else
+        render "new"
+    end
   end
   
   def destroy

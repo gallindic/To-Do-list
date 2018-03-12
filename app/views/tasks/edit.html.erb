@@ -1,0 +1,28 @@
+ <div class="h-100 row justify-content-center align-items-center mt-5"><!--Aligns div to the center-->
+  <div class="col-5 text-center">
+    <div class="card ">
+      <div class="card-header">
+        <h2>Update a task</h2>
+      </div>
+      <div class="card-body">
+         <%= form_for @task do |t| %>
+            <div class="form-group">
+                <% t.label :content %><br/>
+                <%= t.text_field :content, class: "form-control" %>
+              </div>
+              <div class="form-group">
+                  <%= t.file_field :image, class: "form-control" %>
+              </div>
+            <div class="form-group">
+                <span>Finished</span><br/><% t.label :finished %><br/>
+                <%= t.check_box :finished, autofocus: true, class: "form-control" %>
+              </div>
+          <div class="form-group">
+            <%= t.submit "Update", class: 'btn btn-primary' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+

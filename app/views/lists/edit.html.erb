@@ -1,58 +1,25 @@
-<div class="container mt-3">
-    <div class="row">
-        <div class="col-1"></div>
-        <div class="col-10">
-            <h3 class="text-center"><%= @list.name %></h3>
-            <div class="mt-5">
-                <div class="row">
-                    <div class="col-6 vertical-divider">
-                        <h5 class="text-center">Unfinished Tasks</h5>
-                        <% for @t in @tasks %>
-                            <% if !@t.finished %>
-                                <div class="card col-12 mt-3 p-3 card-no-border card-dark-border">
-                                  <div class="card-block tasks">
-                                      <div class="float-left">
-                                          <span class="task-content"><%= @t.content %></span>
-                                      </div>
-                                      <div class="float-right">
-                                          <span class="mx-1 card-icon">
-                                              <%= link_to fa_icon("check-circle") %>
-                                          </span>
-                                          <span class="mx-1 card-icon">
-                                              <%= link_to fa_icon("pencil") %>
-                                          </span>
-                                          <span class="mx-1 card-icon">
-                                              <%= link_to fa_icon("trash-o") %>
-                                          </span>
-                                      </div>
-                                    </div>
-                                </div>
-                            <% end %>
-                        <% end %>
-                        <h5 class="text-center mt-4">Finished Tasks</h5>
-                        <% for @t in @tasks %>
-                            <% if @t.finished %>
-                                <div class="card col-12 mt-3 p-3 card-no-border card-dark-border">
-                                  <div class="card-block tasks">
-                                      <div class="float-left">
-                                          <span class="task-content"><%= @t.content %></span>
-                                      </div>
-                                      <div class="float-right">
-                                          <span class="mx-1 card-icon">
-                                              <%= link_to fa_icon("trash-o") %>
-                                          </span>
-                                      </div>
-                                    </div>
-                                </div>
-                            <% end %>
-                        <% end %>
-                    </div>
-                    <div class="col-6">
-                        iusahd iuas
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-1"></div>
+ <div class="h-100 row justify-content-center align-items-center mt-5"><!--Aligns div to the center-->
+  <div class="col-5 text-center">
+    <div class="card ">
+      <div class="card-header">
+        <h2>Update a list</h2>
+      </div>
+      <div class="card-body">
+         <%= form_for @list do |l| %>
+            <div class="form-group">
+                <% l.label :name %><br/>
+                <%= l.text_field :name, class: "form-control" %>
+              </div>
+            <div class="form-group">
+                <span>Finished</span><br/><% l.label :finished %><br/>
+                <%= l.check_box :finished, autofocus: true, class: "form-control" %>
+              </div>
+          <div class="form-group">
+            <%= l.submit "Update", class: 'btn btn-primary' %>
+          </div>
+        <% end %>
+      </div>
     </div>
+  </div>
 </div>
+

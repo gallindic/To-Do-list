@@ -2,12 +2,11 @@ Rails.application.routes.draw do
 
   devise_for :users
   
+  resources :user
   resources :lists
+  resources :tasks
   
   #Routes
-
-  get '/profile/:id' => "pages#profile"
-  get '/settings' => "pages#settings"
   
   # You can have the root of your site routed with "root"
   root 'lists#index'
